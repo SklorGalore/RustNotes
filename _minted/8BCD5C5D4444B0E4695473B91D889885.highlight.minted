@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{g+gp}{	\PYGZdl{} }rustc\PYG{+w}{ }main.rs\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} compile}
+\PYG{g+gp}{	\PYGZdl{} }./program\PYGZus{}name\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} run the produced executable}
+\end{MintedVerbatim}
