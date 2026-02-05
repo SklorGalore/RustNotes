@@ -17,33 +17,33 @@ Once you have rust installed, check that the Rust compiler is set up correctly b
 Rust can be updated using rustup, the included tool chain for installing and maintaining Rust.
 The version of rustup can be checked in a similar matter.
 Rust can be updated via rustup by running 
-\begin{minted}[linenos, style=monokai, bgcolor=darkgray]{console}
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 	$ rustup --version
 	$ rustup update
 \end{minted}
 \subsection{Cargo Basics}
 Rust runs typically from a main function created by initializing the project using cargo.
 Initialize a project using cargo
-\begin{minted}[linenos, style=monokai, bgcolor=darkgray]{console}
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 	$ cargo new project_name
 \end{minted}
 If the directory already exists, you can build a project in that directory using
-\begin{minted}[linenos, style=monokai, bgcolor=darkgray]{console}
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 	$ cargo init
 \end{minted}
 You can add dependencies, like external libraries from \href{crates.io}{crates.io}, by running
-\begin{minted}[linenos, style=monokai, bgcolor=darkgray]{console}
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 	$ cargo add package_name
 \end{minted}
 Finally, when you're ready, you can build your project for debugging or release using cargo as well via
-\begin{minted}[linenos, style=monokai, bgcolor=darkgray]{console}
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 	$ cargo build # compiles for debug by default
 	$ cargo build --release # for building using the release profile
 	$ cargo run # compiles for debug and runs the executable
 	$ cargo run --release # compiles and runs the release profile executable
 \end{minted}
 Additionally, you can always compile your Rust script using the Rust compiler itself and then running the produced executable
-\begin{minted}[linenos, style=monokai, bgcolor=darkgray]{console}
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 	$ rustc main.rs # compile
 	$ ./program_name # run the produced executable
 \end{minted}
