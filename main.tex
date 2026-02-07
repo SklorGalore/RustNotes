@@ -66,5 +66,9 @@ These packages do not need to be included as dependencies via cargo and can be b
 The double colon '::' is similar to the dot '.' notation from other languages where the above brings in the \code{io} library from the standard library.
 \subsection{Variable Declarations}
 New variables are declared using \code{let}.
-Variables are \textit{immutable} 
+Variables are \textit{immutable} by default and must be declared as \textit{mutable} using the keyword \code{mut} during the variable declaration
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+	let x = 5;
+	let mut y = 6;
+\end{minted}
 \end{document}
