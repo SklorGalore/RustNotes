@@ -48,14 +48,14 @@ Additionally, you can always compile your Rust script using the Rust compiler it
 	$ ./program_name # run the produced executable
 \end{minted}
 \subsection{Basic Setup}
-Typical Rust programs will contain the following code snippet within \texttt{main.rs} by default
+Typical Rust programs will contain the following code snippet within \code{main.rs} by default
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 	fn main(){
 		println!("Hello, world!")
 	}
 \end{minted}
 The code contained in the main function is what gets compiled and called by the typical Rust compilation actions.
-Note that the default function setup contains the macro \texttt{println!} which prints the string literal \texttt{"Hello, world!"} to the console.
+Note that the default function setup contains the macro \code{println!} which prints the string literal \code{"Hello, world!"} to the console.
 We know this is a macro because the standard naming scheme for macros in Rust is to leave an "!" at the end of a function name.
 \subsection{Including Libraries}
 Certain libraries are packaged with Rust, known as the \textit{standard library}, shortened to \textit{std}.
@@ -63,8 +63,8 @@ These packages do not need to be included as dependencies via cargo and can be b
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 	use std::io
 \end{minted}
-The double colon '::' is similar to the dot '.' notation from other languages where the above brings in the \texttt{io} library from the standard library.
+The double colon '::' is similar to the dot '.' notation from other languages where the above brings in the \code{io} library from the standard library.
 \subsection{Variable Declarations}
-New variables are declared using \texttt{let}.
+New variables are declared using \code{let}.
 Variables are \textit{immutable} 
 \end{document}
