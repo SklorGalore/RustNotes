@@ -71,5 +71,10 @@ Variables are \textit{immutable} by default and must be declared as \textit{muta
 	let x = 5; // x is an immutable variable
 	let mut y = 6; // y is a mutable variable
 \end{minted}
+You can, and should, annotate the type of a variable when declaring it like this
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+	let x: i32 = 297;
+	let y: &str = "hello"
+\end{minted}
 
 \end{document}
