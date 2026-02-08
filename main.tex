@@ -80,7 +80,7 @@ Note that \code{\&str} is a reference to the string type which will be touched o
 
 \subsection{User Input}
 Input from the terminal can be obtained using the standard library's \code{io::stdin()} method.
-\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray, verbatim]{rust}
 	io::stdin()
 		.read_line(&mut guess);
 \end{minted}
@@ -92,6 +92,8 @@ We can add the \code{except} method to this call and add a response in the case 
 	.read_line(&mut guess)
 	.except("Failed to read input");
 \end{minted}
+\section{Variables and Typing}
+
 \section{Flow Control}
 Basic looping can be accomplished with the \code{loop} keyword which establishes a loop that continues until \code{break} is run
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
@@ -102,4 +104,5 @@ Basic looping can be accomplished with the \code{loop} keyword which establishes
 \end{minted}
 Note that loops can also be named and continued or broken by their name.
 This is especially useful for controlling nested loops.
+
 \end{document}
