@@ -187,12 +187,24 @@ Chars are a 4-byte type representing a Unicode scalar value.
 Compound types are data types which themselves may contain multiple different pieces of data which may be different types of their own
 \subsubsection{Tuples}
 
+Tuples are types of fixed length which may contain multiple different data types.
+Note that once a tuple is declared, its length may not be increased or decreased, though it may be de-structured into individual pieces
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 \\ declaring a tuple of different types
 let tup: (i32, f64, u8) = (500, 6.4, 1);
 
-\\ destructuring a tuple
+\\ de-structuring a tuple
 let (x, y, z) = tup;
 \end{minted}
+You may also access individual elements of a tuple using dot notation
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+	\\ declaring a tuple of different types
+	let tup: (i32, f64, u8) = (500, 6.4, 1);
+	
+	\\ retrieving the first value from a tuple
+	let x = tup.0;
+\end{minted}
+Empty tuples with no type have their own name and type, \textit{unit}, written as $()$.
+Any expression which does not inherently return a value will return unit
 \printindex
 \end{document}
