@@ -28,7 +28,7 @@ $ rustup update
 \subsection{Cargo Basics}
 
 Rust runs typically from a main function\index{functions!main} created by initializing the project using cargo.
-Initialize a project using cargo \index{cargo!initialize}
+Initialize a project\index{projects} using cargo \index{cargo!initialize}
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 $ cargo new project_name
 \end{minted}
@@ -102,7 +102,7 @@ io::stdin()
 \end{minted}
 \section{Variables and Typing}
 
-\index{Constants} are declared with the keyword \code{const} and like most variables are immutable.
+Constants\index{constants} are declared with the keyword \code{const} and like most variables are immutable.
 The difference is that constants can \textit{never} be made mutable.
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 const varname = 5;
