@@ -216,5 +216,19 @@ Arrays are declared with brackets and only need one type declaration along with 
 // declaring an array of type i32 and length 5
 let a: [i32; 5] = [1, 2, 3, 4, 5];
 \end{minted}
+Array values are accessed using bracket notation
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+let first = a[0];
+let second = a[1];
+\end{minted}
+\section{Functions}
+
+Functions are the main way of executing code in Rust and are declared with the \code{fn} keyword.
+The usual entry point of a Rust program is the \code{main} function that is created with a new project by default
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+fn main() {
+
+}
+\end{minted}
 \printindex
 \end{document}
