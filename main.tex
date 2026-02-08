@@ -158,17 +158,20 @@ let x: i32 = 23 + 16u16
 Numeric literals can be specified in any of the following formats
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
 \begin{table}[]
 	\centering
 	\caption{Integer Literals in Rust}
 	\label{tab:my-table}
 	\begin{tabular}{@{}ll@{}}
-		Number Literal & Example      \\
+		\toprule
+		Number Literal & Example      \\ \midrule
 		Decimal        & 98\_222      \\
 		Hex            & 0xff         \\
 		Octal          & 0o77         \\
 		Binary         & 0b1111\_0000 \\
-		Byte (u8 only) & b'A'        
+		Byte (u8 only) & b'A'         \\ \bottomrule
 	\end{tabular}
 \end{table}
 \printindex
