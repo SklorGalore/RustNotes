@@ -127,18 +127,20 @@ This is especially useful for controlling nested loops.
 \subsection{Scalar Data Types}
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
 \begin{table}[]
 	\caption{Integer Types in Rust}
 	\label{tab:int-types}
-	\begin{tabular}{@{}llll@{}}
+	\begin{tabular}{@{}|l|l|l|l|@{}}
 		\toprule
-		Length                        & Signed                    & Unsigned                  & Range of Values                                     \\ \midrule
-		\multicolumn{1}{|l|}{8-bit}   & \multicolumn{1}{l|}{i8}   & \multicolumn{1}{l|}{u8}   & \multicolumn{1}{l|}{$2^8=256$}                      \\ \midrule
-		\multicolumn{1}{|l|}{16-bit}  & \multicolumn{1}{l|}{i16}  & \multicolumn{1}{l|}{u16}  & \multicolumn{1}{l|}{$2^16=65,536$}                  \\ \midrule
-		\multicolumn{1}{|l|}{32-bit}  & \multicolumn{1}{l|}{i32}  & \multicolumn{1}{l|}{u32}  & \multicolumn{1}{l|}{$2^32\cong4.294\times10^9$}     \\ \midrule
-		\multicolumn{1}{|l|}{64-bit}  & \multicolumn{1}{l|}{i64}  & \multicolumn{1}{l|}{u64}  & \multicolumn{1}{l|}{$2^64\cong18.446\times10^{18}$} \\ \midrule
-		\multicolumn{1}{|l|}{128-bit} & \multicolumn{1}{l|}{i128} & \multicolumn{1}{l|}{u128} & \multicolumn{1}{l|}{$2^128\cong3.40\times10^{38}$}  \\ \midrule
-		Architecture-dependent        & isize                     & usize                     & See above                                           \\ \bottomrule
+		Length                 & Signed & Unsigned & Range of Values                \\ \midrule
+		8-bit                  & i8     & u8       & $2^8=256$                      \\ \midrule
+		16-bit                 & i16    & u16      & $2^16=65,536$                  \\ \midrule
+		32-bit                 & i32    & u32      & $2^32\cong4.294\times10^9$     \\ \midrule
+		64-bit                 & i64    & u64      & $2^64\cong18.446\times10^{18}$ \\ \midrule
+		128-bit                & i128   & u128     & $2^128\cong3.40\times10^{38}$  \\ \midrule
+		Architecture-dependent & isize  & usize    & See above                      \\ \bottomrule
 	\end{tabular}
 \end{table}
 \printindex
