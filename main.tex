@@ -93,8 +93,8 @@ This reference must be mutable because we are changing the value stored at that 
 We can add the \code{except} method to this call and add a response in the case that the method fails.
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 io::stdin()
-.read_line(&mut guess)
-.except("Failed to read input");
+	.read_line(&mut guess)
+	.except("Failed to read input");
 \end{minted}
 \section{Variables and Typing}
 
