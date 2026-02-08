@@ -107,6 +107,10 @@ The difference is that constants can \textit{never} be made mutable.
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 const varname = 5;
 \end{minted}
+Variables can also be reassigned via shadowing\index{shadowing} where an immutable variable has its value reassigned by re-declaring it using the current value with some modification added
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+    let x = 5
+\end{minted}
 \section{Flow Control}
 
 Basic looping can be accomplished with the \code{loop} keyword which establishes a loop that continues until \code{break} is run
