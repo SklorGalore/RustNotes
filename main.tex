@@ -136,6 +136,10 @@ This is especially useful for controlling nested loops.
 % Please add the following required packages to your document preamble:
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage[table,xcdraw]{xcolor}
+% Beamer presentation requires \usepackage{colortbl} instead of \usepackage[table,xcdraw]{xcolor}
 \begin{table}[]
 	\centering
 	\caption{Integer Types in Rust}
@@ -143,10 +147,13 @@ This is especially useful for controlling nested loops.
 	\begin{tabular}{@{}llll@{}}
 		\toprule
 		Length                 & Signed & Unsigned & Range of Values                  \\ \midrule
+		\rowcolor[HTML]{C0C0C0} 
 		8-bit                  & i8     & u8       & $2^8=256$                        \\
 		16-bit                 & i16    & u16      & $2^{16}=65,536$                  \\
-		32-bit                 & i32    & u32      & $2^{32}\cong4.294\times10^9$   \\
+		\rowcolor[HTML]{C0C0C0} 
+		32-bit                 & i32    & u32      & $2^{32}\cong4.294\times10^9$     \\
 		64-bit                 & i64    & u64      & $2^{64}\cong18.446\times10^{18}$ \\
+		\rowcolor[HTML]{C0C0C0} 
 		128-bit                & i128   & u128     & $2^{128}\cong3.40\times10^{38}$  \\
 		Architecture-dependent & isize  & usize    & See above                        \\ \bottomrule
 	\end{tabular}
