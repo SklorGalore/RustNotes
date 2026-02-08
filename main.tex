@@ -125,17 +125,17 @@ loop 'loopname {
 Note that loops can also be named and continued or broken by their name.
 This is especially useful for controlling nested loops.
 \subsection{Scalar Data Types}
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% Please add the following required packages to your document preamble:
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
+
+Scalar data types contain data of only one type and fall into one of the following four categories
+\begin{itemize}
+	\item Integers
+	\item Floating Point Numbers
+	\item Booleans
+	\item Chars
+\end{itemize}
+\subsubsection{Integers}
+
+Integers are whole numbers without decimal components and can be defined based on their size
 \begin{table}[h]
 	\centering
 	\caption{Integer Types in Rust}
@@ -170,5 +170,19 @@ Numeric literals can be specified in any of the following formats
 		Byte (u8 only) & b'A'         \\ \bottomrule
 	\end{tabular}
 \end{table}
+If you're unsure what to use, Rust's default integer type is i32.
+\subsubsection{Floating Points}
+
+Floating point numbers can be specified as \code{f32} or \code{f64} and are represented according to IEEE-754.
+\subsubsection{Booleans}
+
+Booleans are values that can either be true or false, and are annotated as \code{bool}.
+Note that Rust, unlike some other languages, will not interpret any non boolean type values as a bool.
+If the condition of non boolean type data is checked, it will fail.
+\subsubsection{Chars}
+
+Chars are a 4-byte type representing a Unicode scalar value.
+\subsection{Compound Types}
+
 \printindex
 \end{document}
