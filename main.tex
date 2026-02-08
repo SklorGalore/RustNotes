@@ -13,103 +13,79 @@
 
 Install Rust from the \href{https://www.rust-lang.org/tools/install}{Rust website}.
 Once you have rust installed, check that the Rust compiler is set up correctly by running
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 $ rustc --version
 \end{minted}
-
 Rust can be updated using rustup, the included tool chain for installing and maintaining Rust.
 The version of rustup can be checked in a similar matter.
 Rust can be updated via rustup by running
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 $ rustup --version
 $ rustup update
 \end{minted}
-
 \subsection{Cargo Basics}
 
 Rust runs typically from a main function created by initializing the project using cargo.
 Initialize a project using cargo
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 $ cargo new project_name
 \end{minted}
-
 If the directory already exists, you can build a project in that directory using
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 $ cargo init
 \end{minted}
-
 You can add dependencies, like external libraries from \href{crates.io}{crates.io}, by running
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 $ cargo add package_name
 \end{minted}
-
 Finally, when you're ready, you can build your project for debugging or release using cargo as well via
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 $ cargo build # compiles for debug by default
 $ cargo build --release # for building using the release profile
 $ cargo run # compiles for debug and runs the executable
 $ cargo run --release # compiles and runs the release profile executable
 \end{minted}
-
 Additionally, you can always compile your Rust script using the Rust compiler itself and then running the produced executable
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{console}
 $ rustc main.rs # compile
 $ ./program_name # run the produced executable
 \end{minted}
-
 \subsection{Basic Setup}
 
 Typical Rust programs will contain the following code snippet within \code{main.rs} by default
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 fn main(){
     println!("Hello, world!")
 }
 \end{minted}
-
 The code contained in the main function is what gets compiled and called by the typical Rust compilation actions.
 Note that the default function setup contains the macro \code{println!} which prints the string literal \code{"Hello, world!"} to the console.
 We know this is a macro because the standard naming scheme for macros in Rust is to leave an "!" at the end of a function name.
-
 \subsection{Including Libraries}
+
 Certain libraries are packaged with Rust, known as the \textit{standard library}, shortened to \textit{std}.
 These packages do not need to be included as dependencies via cargo and can be brought into your code via the following syntax
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 use std::io
 \end{minted}
-
 The double colon '::' is similar to the dot '.' notation from other languages where the above brings in the \code{io} library from the standard library.
-
 \subsection{Variable Declarations}
+
 New variables are declared using \code{let}.
 Variables are \textit{immutable} by default and must be declared as \textit{mutable} using the keyword \code{mut} during the variable declaration
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 let x = 5; // x is an immutable variable
 let mut y = 6; // y is a mutable variable
 \end{minted}
-
 You can, and should, annotate the type of a variable when declaring it like this
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 let x: i32 = 297;
 let y: &str = "hello"
 \end{minted}
-
 Note that \code{\&str} is a reference to the string type which will be touched on later.
-
 \subsection{User Input}
 
 Input from the terminal can be obtained using the standard library's \code{io::stdin()} method.
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 io::stdin()
     .read_line(&mut guess);
@@ -117,13 +93,11 @@ io::stdin()
 Where a mutable reference to the variable "guess" is passed to the standard io method allowing it to pass the terminal input to the location in memory where the variable guess is stored.
 This reference must be mutable because we are changing the value stored at that location.
 We can add the \code{except} method to this call and add a response in the case that the method fails.
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 io::stdin()
     .read_line(&mut guess)
     .except("Failed to read input");
 \end{minted}
-
 \section{Variables and Typing}
 
 \section{Flow Control}
@@ -137,5 +111,4 @@ loop 'loopname {
 \end{minted}
 Note that loops can also be named and continued or broken by their name.
 This is especially useful for controlling nested loops.
-
 \end{document}
