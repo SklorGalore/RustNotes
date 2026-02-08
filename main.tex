@@ -184,5 +184,15 @@ If the condition of non boolean type data is checked, it will fail.
 Chars are a 4-byte type representing a Unicode scalar value.
 \subsection{Compound Types}
 
+Compound types are data types which themselves may contain multiple different pieces of data which may be different types of their own
+\subsubsection{Tuples}
+
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+\\ declaring a tuple of different types
+let tup: (i32, f64, u8) = (500, 6.4, 1);
+
+\\ destructuring a tuple
+let (x, y, z) = tup;
+\end{minted}
 \printindex
 \end{document}
