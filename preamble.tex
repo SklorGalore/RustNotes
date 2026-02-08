@@ -7,20 +7,23 @@
 \author{\sffamily\bfseries{}Skylar Coelho}
 \date{\sffamily\bfseries\today}
 
+% Set section headers to sans serif
 \usepackage{sectsty}
-
-% Sets all sectioning headers (Title, Section, Subsection, etc.) to Sans-Serif
 \allsectionsfont{\sffamily\bfseries}
 
+% Use minted
 \usepackage[]{minted}
 
+% Set up page and text color
 \usepackage[]{pagecolor}
-
 \pagecolor{darkgray}
 \definecolor{softwhite}{RGB}{235, 219, 178}
 \color{softwhite}
 
+% Set up hyperlinks
 \usepackage[]{hyperref}
-\hypersetup{colorlinks=true, linkcolor=orange}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=brown}
 
+% Custom macros and commands
 \newcommand{\code}[1]{\textbf{\texttt{\color{orange}#1}}}
