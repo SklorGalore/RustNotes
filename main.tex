@@ -93,4 +93,13 @@ We can add the \code{except} method to this call and add a response in the case 
 	.except("Failed to read input");
 \end{minted}
 \section{Flow Control}
+Basic looping can be accomplished with the \code{loop} keyword which establishes a loop that continues until \code{break} is run
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+	loop 'loopname { 
+		println!("Looping!");
+		break 'loopname
+	}
+\end{minted}
+Note that loops can also be named and continued or broken by their name.
+This is especially useful for controlling nested loops.
 \end{document}
