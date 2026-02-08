@@ -209,6 +209,11 @@ Empty tuples with no type have their own name and type, \emph{unit}, written as 
 Any expression which does not inherently return a value will return unit.
 \subsubsection{Arrays}
 
-Arrays hold collections of multiple items which have the \emph{same} type
+Arrays hold collections of multiple items which have the \emph{same} type.
+Like tuples, arrays have a fixed length.
+Arrays are declared with brackets and only need one type declaration along with their length.
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+let a: [i32; 5] = [1, 2, 3, 4, 5];
+\end{minted}
 \printindex
 \end{document}
