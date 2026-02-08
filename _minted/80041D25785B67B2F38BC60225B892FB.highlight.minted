@@ -1,6 +1,0 @@
-\begin{MintedVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{	\PYGZdl{} }cargo\PYG{+w}{ }build\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} compiles for debug by default}
-\PYG{g+gp}{	\PYGZdl{} }cargo\PYG{+w}{ }build\PYG{+w}{ }\PYGZhy{}\PYGZhy{}release\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} for building using the release profile}
-\PYG{g+gp}{	\PYGZdl{} }cargo\PYG{+w}{ }run\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} compiles for debug and runs the executable}
-\PYG{g+gp}{	\PYGZdl{} }cargo\PYG{+w}{ }run\PYG{+w}{ }\PYGZhy{}\PYGZhy{}release\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} compiles and runs the release profile executable}
-\end{MintedVerbatim}

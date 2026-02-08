@@ -1,0 +1,7 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{	}\PYG{c+c1}{// declaring a tuple of different types}
+\PYG{+w}{	}\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n}{tup}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{i32}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{f64}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{u8}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m+mi}{500}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{6.4}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{c+c1}{// retrieving the first value from a tuple}
+\PYG{+w}{	}\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n}{x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{tup}\PYG{p}{.}\PYG{l+m+mi}{0}\PYG{p}{;}
+\end{MintedVerbatim}

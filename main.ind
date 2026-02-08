@@ -1,0 +1,33 @@
+\begin{theindex}
+
+  \item cargo
+    \subitem initialize, \hyperpage{2}
+  \item constants, \hyperpage{3}
+
+  \indexspace
+
+  \item expressions, \hyperpage{7}
+
+  \indexspace
+
+  \item functions
+    \subitem main, \hyperpage{2}
+
+  \indexspace
+
+  \item installation, \hyperpage{1}
+
+  \indexspace
+
+  \item projects, \hyperpage{2}
+
+  \indexspace
+
+  \item rustup, \hyperpage{1}
+
+  \indexspace
+
+  \item shadowing, \hyperpage{4}
+  \item statements, \hyperpage{7}
+
+\end{theindex}

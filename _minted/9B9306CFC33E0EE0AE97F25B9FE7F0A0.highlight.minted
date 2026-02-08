@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{i32}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{297}\PYG{p}{;}
+\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kp}{\PYGZam{}}\PYG{k+kt}{str}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{hello}\PYG{l+s}{\PYGZdq{}}
+\end{MintedVerbatim}
