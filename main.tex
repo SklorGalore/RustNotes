@@ -129,19 +129,23 @@ This is especially useful for controlling nested loops.
 % \usepackage{booktabs}
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
 \begin{table}[]
 	\centering
 	\caption{Integer Types in Rust}
 	\label{tab:int-types}
 	\begin{tabular}{@{}|l|l|l|l|@{}}
 		\toprule
-		Length                 & Signed & Unsigned & Range of Values                \\ \midrule
-		8-bit                  & i8     & u8       & $2^8=256$                      \\ \midrule
-		16-bit                 & i16    & u16      & $2^16=65,536$                  \\ \midrule
-		32-bit                 & i32    & u32      & $2^32\cong4.294\times10^9$     \\ \midrule
-		64-bit                 & i64    & u64      & $2^64\cong18.446\times10^{18}$ \\ \midrule
-		128-bit                & i128   & u128     & $2^128\cong3.40\times10^{38}$  \\ \midrule
-		Architecture-dependent & isize  & usize    & See above                      \\ \bottomrule
+		Length                 & Signed & Unsigned & Range of Values                  \\ \midrule
+		8-bit                  & i8     & u8       & $2^8=256$                        \\ \midrule
+		16-bit                 & i16    & u16      & $2^{16}=65,536$                  \\ \midrule
+		32-bit                 & i32    & u32      & $2^{32}\cong4.294\times10^9$\{   \\ \midrule
+		64-bit                 & i64    & u64      & $2^{64}\cong18.446\times10^{18}$ \\ \midrule
+		128-bit                & i128   & u128     & $2^{128}\cong3.40\times10^{38}$  \\ \midrule
+		Architecture-dependent & isize  & usize    & See above                        \\ \bottomrule
 	\end{tabular}
 \end{table}
 \printindex
