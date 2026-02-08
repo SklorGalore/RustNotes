@@ -114,7 +114,6 @@ Input from the terminal can be obtained using the standard library's \code{io::s
 io::stdin()
     .read_line(&mut guess);
 \end{minted}
-
 Where a mutable reference to the variable "guess" is passed to the standard io method allowing it to pass the terminal input to the location in memory where the variable guess is stored.
 This reference must be mutable because we are changing the value stored at that location.
 We can add the \code{except} method to this call and add a response in the case that the method fails.
@@ -130,14 +129,12 @@ io::stdin()
 \section{Flow Control}
 
 Basic looping can be accomplished with the \code{loop} keyword which establishes a loop that continues until \code{break} is run
-
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 loop 'loopname { 
     println!("Looping!");
     break 'loopname
 }
 \end{minted}
-
 Note that loops can also be named and continued or broken by their name.
 This is especially useful for controlling nested loops.
 
