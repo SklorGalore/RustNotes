@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2026.2.2)  8 FEB 2026 16:12
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2026.2.2)  8 FEB 2026 19:43
  system commands enabled.
 **main.tex
 (./main.tex
@@ -645,7 +645,7 @@ Package svg Info: Last page of `./svg-inkscape/rustacean-flat-gesture_svg-tex.p
 df' is 1 on input line 9.
 
 (./svg-inkscape/rustacean-flat-gesture_svg-tex.pdf_tex
-<./svg-inkscape/rustacean-flat-gesture_svg-tex.pdf, id=84, page=1, 878.13217pt 
+<./svg-inkscape/rustacean-flat-gesture_svg-tex.pdf, id=92, page=1, 878.13217pt 
 x 515.73997pt>
 File: ./svg-inkscape/rustacean-flat-gesture_svg-tex.pdf Graphic file (type pdf)
 
@@ -672,11 +672,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \pydata@fh@_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted=\write8
 
 \openout8 = _FAD58DE7366495DB4650CFEFAC2FCD61.data.minted
-runsystem(latexminted config  --timestamp 20260208161217 FAD58DE7366495DB4650CFE
+runsystem(latexminted config  --timestamp 20260208194346 FAD58DE7366495DB4650CFE
 FAC2FCD61)...executed.
 
 (./_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20260208161217 FAD58DE7366495DB46
+runsystem(latexminted cleanconfig  --timestamp 20260208194346 FAD58DE7366495DB46
 50CFEFAC2FCD61)...executed.
 
 (./_minted/gruvbox-dark.style.minted)
@@ -696,9 +696,9 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 57.
 
 (./_minted/0ECBC1ABDBCEEDC719945D07A74585DC.highlight.minted)
-(./_minted/01946FDC221C544E1FC329FB4A1874F5.highlight.minted)
+(./_minted/01946FDC221C544E1FC329FB4A1874F5.highlight.minted
 
-[2] (./_minted/336581716D5970C83B67DB0D294B8C0F.highlight.minted)
+[2]) (./_minted/336581716D5970C83B67DB0D294B8C0F.highlight.minted)
 (./_minted/9B9306CFC33E0EE0AE97F25B9FE7F0A0.highlight.minted)
 (./_minted/1053C61020503C320CE4AD4366B0E44A.highlight.minted
 Overfull \hbox (6.43997pt too wide) in paragraph at lines 90--1
@@ -711,11 +711,13 @@ Overfull \hbox (6.43997pt too wide) in paragraph at lines 90--1
 (./_minted/6930FD3294DC7AC1BE2112F16D5A2583.highlight.minted
 
 [3]) (./_minted/D8BA1F5963EF5E10A1BBE8E8392F7885.highlight.minted)
+\openout8 = _FAD58DE7366495DB4650CFEFAC2FCD61.data.minted
+
+runsystem(latexminted highlight  --timestamp 20260208194346 FAD58DE7366495DB4650
+CFEFAC2FCD61)...executed.
+
+(./_minted/F7A2819D9AB68CB77EEB958A0A2F567C.highlight.minted)
 (./_minted/43319826AE1C3F868B1C6B228E512F68.highlight.minted
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 
 [4])
 
@@ -730,51 +732,31 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8
 
-] (./main.aux)
+]
+\openout8 = _FAD58DE7366495DB4650CFEFAC2FCD61.data.minted
+
+runsystem(latexminted clean  --timestamp 20260208194346 FAD58DE7366495DB4650CFEF
+AC2FCD61)...executed.
+ (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 4A6D179C9127CF4D4857A33EF7009BAF;2246
-(rerunfilecheck)             After:  D0F8EE5770FE0A804C0AA3265F28A213;2455.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D0F8EE5770FE0A804C0AA3265F28A213;2455.
 )
 
 Here is how much of LuaTeX's memory you used:
- 16528 strings out of 475512
+ 16538 strings out of 475512
  100000,1144653 words of node,token memory allocated
  461 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 55 glue_spec,
  6 attribute_list, 2 write nodes
-   avail lists: 1:1,2:1171,3:407,4:724,5:444,6:104,7:4098,8:19,9:656,10:7,11:208
+   avail lists: 1:1,2:1171,3:425,4:724,5:428,6:110,7:4243,8:19,9:679,10:7,11:208
 
- 38953 multiletter control sequences out of 65536+600000
+ 38959 multiletter control sequences out of 65536+600000
  51 fonts using 4127527 bytes
- 101i,17n,93p,479b,843s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-warning  (pdf backend): unreferenced destination with name 'subsubsection.3.2.2'
-
-
-warning  (pdf backend): unreferenced destination with name 'subsubsection.3.2.1'
-
-
-warning  (pdf backend): unreferenced destination with name 'subsubsection.3.1.4'
-
-
-warning  (pdf backend): unreferenced destination with name 'subsubsection.3.1.3'
-
-
-warning  (pdf backend): unreferenced destination with name 'subsubsection.3.1.2'
-
-
-warning  (pdf backend): unreferenced destination with name 'subsubsection.3.1.1'
-
+ 101i,17n,93p,479b,750s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/
 public/lm/lmmono10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono1
@@ -785,10 +767,10 @@ blic/lm/lmsans10-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (8 pages, 98243 bytes).
+Output written on main.pdf (8 pages, 99302 bytes).
 
-PDF statistics: 244 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 131072)
- 168 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 246 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 34 named destinations out of 1000 (max. 131072)
+ 184 words of extra memory for PDF output out of 10000 (max. 100000000)
 
