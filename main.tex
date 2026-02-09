@@ -325,6 +325,12 @@ let user1 = User {
     sign_in_count: 1,
 };
 \end{minted}
+Values are set and retrieved using dot notation
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+user1.email = String::from("anotheremail@example​.­com");
+\end{minted}
+Note that a struct as a whole must be mutable for us to set these values after it is defined.
+We cannot set certain fields to be mutable and some not.
 
 \printindex
 \end{document}
