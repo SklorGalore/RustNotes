@@ -236,7 +236,6 @@ if var == 5 {
 For conditions with multiple branches, \code{else if} statements can be used to evaluate multiple clauses
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 let number = 6;
-}
 if number % 4 == 0 {
 println!("number is divisible by 4");
 } else if number % 3 == 0 {
@@ -260,12 +259,11 @@ Loops can also return a value by assigning the returned value of the loop to a v
 let mut counter = 0;
 let result = loop {
     counter += 1;
-}
-if counter == 10 {
+    if counter == 10 {
     break counter * 2;
 }
 };
-println!("The result is {result}");
+
 \end{minted}
 \section{Functions}
 
