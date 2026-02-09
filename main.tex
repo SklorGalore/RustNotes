@@ -299,5 +299,22 @@ Note that above, the value $x+23$ is returned because it is the last expression 
 This brings up the concept of expressions\index{expressions} versus statements\index{statements}.
 The difference between the two is that expressions return a value while statements do not.
 Statements are terminated with a semicolon, while expressions are not.
+\section{Ownership}
+
+Ownership and the borrow checker is how Rust manages memory.
+The most important thing to know in this regard, is that variables are valid when they come in to scope and remain valid until they go out of scope.
+
+\section{Structs}
+
+Structs are Rust's answer to structured and labeled data.
+Define a struct using the keyword \code{struct}
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+struct User {
+    active: bool,
+    username: String,
+    email: String,
+    sign_in_count: u64,
+}
+\end{minted}
 \printindex
 \end{document}
