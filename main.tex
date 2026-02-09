@@ -264,6 +264,16 @@ let result = loop {
     }
 };
 \end{minted}
+\subsection{For Loops}
+
+For collections like tuples and arrays, we can simply loop through each element using a \code{for} loop
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+let a = [10, 20, 30, 40, 50];
+    
+for element in a {
+    println!("the value is: {element}");
+}
+\end{minted}
 \section{Functions}
 
 Functions are the main way of executing code in Rust and are declared with the \code{fn} keyword.
