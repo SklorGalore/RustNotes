@@ -114,6 +114,103 @@ let x += 5 // x now equals 10! We have changed an immutable variable
 \end{minted}
 Note that this allows us to both change a variables value \textbf{and} its type because we are effectively creating a new variable with the same name.
 let number = if condition { 5 } else { 6 };
+\subsection{Scalar Data Types}
+
+Scalar data types contain data of only one type and fall into one of the following four categories
+\begin{itemize}
+    \item Integers
+    \item Floating Point Numbers
+    \item Booleans
+    \item Chars
+\end{itemize}
+\subsubsection{Integers}
+
+Integers are whole numbers without decimal components and can be defined based on their size
+\begin{table}[h]
+    \centering
+    \caption{Integer Types in Rust}
+    \label{tab:int-types}
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        Length                 & Signed & Unsigned & Size of Values                  \\ \midrule
+        8-bit                  & i8     & u8       & $2^8=256$                        \\
+        16-bit                 & i16    & u16      & $2^{16}=65,536$                  \\
+        32-bit                 & i32    & u32      & $2^{32}\cong4.294\times10^9$   \\
+        64-bit                 & i64    & u64      & $2^{64}\cong18.446\times10^{18}$ \\
+        128-bit                & i128   & u128     & $2^{128}\cong3.40\times10^{38}$  \\
+        Architecture-dependent & isize  & usize    & See above                        \\ \bottomrule
+    \end{tabular}
+\end{table}
+Numeric literals that can be interpreted as multiple types can be specified by annotating them within their use
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+    let x: i32 = 23 + 16u16
+\end{minted}
+Numeric literals can be specified in any of the following formats
+\begin{table}[h]
+    \centering
+    \caption{Integer Literals in Rust}
+    \label{tab:my-table}
+    \begin{tabular}{@{}ll@{}}
+        \toprule
+        Number Literal & Example      \\ \midrule
+        Decimal        & 98\_222      \\
+        Hex            & 0xff         \\
+        Octal          & 0o77         \\
+        Binary         & 0b1111\_0000 \\
+        Byte (u8 only) & b'A'         \\ \bottomrule
+    \end{tabular}
+\end{table}
+If you're unsure what to use, Rust's default integer type is i32.
+\subsubsection{Floating Points}
+
+Floating point numbers can be specified as \code{f32} or \code{f64} and are represented according to IEEE-754.
+\subsubsection{Booleans}
+
+Booleans are values that can either be true or false, and are annotated as \code{bool}.
+Note that Rust, unlike some other languages, will not interpret any non boolean type values as a bool.
+If the condition of non boolean type data is checked, it will fail.
+\subsubsection{Chars}
+
+Chars are a 4-byte type representing a Unicode scalar value.
+\subsection{Compound Types}
+
+Compound types are data types which themselves may contain multiple different pieces of data which may be different types of their own
+\subsubsection{Tuples}
+
+Tuples are types of fixed length which may contain multiple different data types.
+Note that once a tuple is declared, its length may not be increased or decreased, though it may be de-structured into individual pieces
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+    // declaring a tuple of different types
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    
+    // de-structuring a tuple
+    let (x, y, z) = tup;
+\end{minted}
+\pagebreak
+You may also access individual elements of a tuple using dot notation
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+    // declaring a tuple of different types
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    
+    // retrieving the first value from a tuple
+    let x = tup.0;
+\end{minted}
+Empty tuples with no type have their own name and type, \emph{unit}, written as $()$.
+Any expression which does not inherently return a value will return unit.
+\subsubsection{Arrays}
+
+Arrays hold collections of multiple items which have the \emph{same} type.
+Like tuples, arrays have a fixed length.
+Arrays are declared with brackets and only need one type declaration along with their length.
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+    // declaring an array of type i32 and length 5
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+\end{minted}
+Array values are accessed using bracket notation
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+    let first = a[0];
+    let second = a[1];
+\end{minted}
 \section{Control Flow}
 Control flow is a basic and essential part of code which allows for controlling the path a written section of code takes based on designated inputs and information.
 Looping and conditional execution are two common examples of control flow.
@@ -159,103 +256,8 @@ let number = if condition { 5 } else { 6 };
 Note that if the options are not the same type, you will likely run into issues.
 \subsection{Returning Values from Loops}
 
-\subsection{Scalar Data Types}
 
-Scalar data types contain data of only one type and fall into one of the following four categories
-\begin{itemize}
-	\item Integers
-	\item Floating Point Numbers
-	\item Booleans
-	\item Chars
-\end{itemize}
-\subsubsection{Integers}
 
-Integers are whole numbers without decimal components and can be defined based on their size
-\begin{table}[h]
-	\centering
-	\caption{Integer Types in Rust}
-	\label{tab:int-types}
-	\begin{tabular}{@{}llll@{}}
-		\toprule
-		Length                 & Signed & Unsigned & Size of Values                  \\ \midrule
-		8-bit                  & i8     & u8       & $2^8=256$                        \\
-		16-bit                 & i16    & u16      & $2^{16}=65,536$                  \\
-		32-bit                 & i32    & u32      & $2^{32}\cong4.294\times10^9$   \\
-		64-bit                 & i64    & u64      & $2^{64}\cong18.446\times10^{18}$ \\
-		128-bit                & i128   & u128     & $2^{128}\cong3.40\times10^{38}$  \\
-		Architecture-dependent & isize  & usize    & See above                        \\ \bottomrule
-	\end{tabular}
-\end{table}
-Numeric literals that can be interpreted as multiple types can be specified by annotating them within their use
-\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
-let x: i32 = 23 + 16u16
-\end{minted}
-Numeric literals can be specified in any of the following formats
-\begin{table}[h]
-	\centering
-	\caption{Integer Literals in Rust}
-	\label{tab:my-table}
-	\begin{tabular}{@{}ll@{}}
-		\toprule
-		Number Literal & Example      \\ \midrule
-		Decimal        & 98\_222      \\
-		Hex            & 0xff         \\
-		Octal          & 0o77         \\
-		Binary         & 0b1111\_0000 \\
-		Byte (u8 only) & b'A'         \\ \bottomrule
-	\end{tabular}
-\end{table}
-If you're unsure what to use, Rust's default integer type is i32.
-\subsubsection{Floating Points}
-
-Floating point numbers can be specified as \code{f32} or \code{f64} and are represented according to IEEE-754.
-\subsubsection{Booleans}
-
-Booleans are values that can either be true or false, and are annotated as \code{bool}.
-Note that Rust, unlike some other languages, will not interpret any non boolean type values as a bool.
-If the condition of non boolean type data is checked, it will fail.
-\subsubsection{Chars}
-
-Chars are a 4-byte type representing a Unicode scalar value.
-\subsection{Compound Types}
-
-Compound types are data types which themselves may contain multiple different pieces of data which may be different types of their own
-\subsubsection{Tuples}
-
-Tuples are types of fixed length which may contain multiple different data types.
-Note that once a tuple is declared, its length may not be increased or decreased, though it may be de-structured into individual pieces
-\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
-// declaring a tuple of different types
-let tup: (i32, f64, u8) = (500, 6.4, 1);
-
-// de-structuring a tuple
-let (x, y, z) = tup;
-\end{minted}
-\pagebreak
-You may also access individual elements of a tuple using dot notation
-\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
-	// declaring a tuple of different types
-	let tup: (i32, f64, u8) = (500, 6.4, 1);
-	
-	// retrieving the first value from a tuple
-	let x = tup.0;
-\end{minted}
-Empty tuples with no type have their own name and type, \emph{unit}, written as $()$.
-Any expression which does not inherently return a value will return unit.
-\subsubsection{Arrays}
-
-Arrays hold collections of multiple items which have the \emph{same} type.
-Like tuples, arrays have a fixed length.
-Arrays are declared with brackets and only need one type declaration along with their length.
-\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
-// declaring an array of type i32 and length 5
-let a: [i32; 5] = [1, 2, 3, 4, 5];
-\end{minted}
-Array values are accessed using bracket notation
-\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
-let first = a[0];
-let second = a[1];
-\end{minted}
 \section{Functions}
 
 Functions are the main way of executing code in Rust and are declared with the \code{fn} keyword.
