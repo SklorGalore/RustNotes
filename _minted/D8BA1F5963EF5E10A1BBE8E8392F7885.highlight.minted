@@ -1,6 +1,0 @@
-\begin{MintedVerbatim}[commandchars=\\\{\}]
-\PYG{k}{loop}\PYG{+w}{ }\PYG{o}{\PYGZsq{}}\PYG{n+na}{loopname}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{    }\PYG{n+nf+fm}{println!}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Looping!}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{    }\PYG{k}{break}\PYG{+w}{ }\PYG{n+nl}{\PYGZsq{}loopname}
-\PYG{p}{\PYGZcb{}}
-\end{MintedVerbatim}

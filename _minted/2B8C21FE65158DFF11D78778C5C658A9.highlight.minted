@@ -1,5 +1,0 @@
-\begin{MintedVerbatim}[commandchars=\\\{\}]
-\PYG{n}{io}\PYG{p}{::}\PYG{n}{stdin}\PYG{p}{(}\PYG{p}{)}
-\PYG{+w}{    }\PYG{p}{.}\PYG{n}{read\PYGZus{}line}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{k}{mut}\PYG{+w}{ }\PYG{n}{guess}\PYG{p}{)}
-\PYG{+w}{    }\PYG{p}{.}\PYG{n}{except}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Failed to read input}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}
-\end{MintedVerbatim}
