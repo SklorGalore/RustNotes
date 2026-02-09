@@ -129,7 +129,12 @@ Note that loops can also be named and continued or broken by their name.
 This is especially useful for controlling nested loops.
 \subsection{If Expressions}
 
-
+A true/false condition combined with the \code{if} keyword creates an \emph{if expression} which allows you to branch into a piece of code if the statement is true.
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+	if var == 5 {
+	dosomething!()
+	}
+\end{minted}
 \subsection{Scalar Data Types}
 
 Scalar data types contain data of only one type and fall into one of the following four categories
