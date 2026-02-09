@@ -9,7 +9,6 @@
 *.idx
 main.toc
 main.toc
-main.toc
 main.synctex.gz
 main.pdf
 main.out
@@ -19,10 +18,7 @@ main.idx
 main.aux
 _minted/_FAD58DE7366495DB4650CFEFAC2FCD61.index.minted
 _minted
-_minted
 svg-inkscape/rustacean-flat-gesture_svg-tex.pdf_tex
-figures/rustacean-flat-gesture.svg
 main.ilg
-main.tex
 ssh.txt
 ssh.txt.pub
