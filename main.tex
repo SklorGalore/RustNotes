@@ -135,6 +135,20 @@ if var == 5 {
     println!("True!")
 }
 \end{minted}
+For conditions with multiple branches, \code{else if} statements can be used to evaluate multiple clauses
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+let number = 6;
+}
+if number % 4 == 0 {
+println!("number is divisible by 4");
+} else if number % 3 == 0 {
+println!("number is divisible by 3");
+} else if number % 2 == 0 {
+println!("number is divisible by 2");
+} else {
+println!("number is not divisible by 4, 3, or 2");
+}
+\end{minted}
 \subsection{Scalar Data Types}
 
 Scalar data types contain data of only one type and fall into one of the following four categories
