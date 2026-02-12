@@ -362,7 +362,7 @@ These can be used when we want to assign a trait to something without that trait
 \subsection{Printing Structs}
 By default, calling the \code{println!} macro on a struct will not work.
 We can get around this by asking Rust to print debug information on our struct.
-Note that in order for our struct to provide debug information, it needs the outer attribute \code{#[derive(Debug)]} named prior to the struct definition.
+Note that in order for our struct to provide debug information, it needs the outer attribute \code{\#[derive(Debug)]} named prior to the struct definition.
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 #[derive(Debug)]
 struct Rectangle {
