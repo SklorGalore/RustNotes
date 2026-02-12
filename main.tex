@@ -508,6 +508,14 @@ This becomes incredibly useful with \code{Option<T>} as we can match whether the
 For example, the following checks if the input has a type of \code{Some(\#)} or if it is \code{None} and execute code and return a value based on this.
 One important thing to note on matches is that they must be exhaustive.
 If we reach the end of a match and nothing has matched, we have a problem.
+If we want to catch the value at the end and use it, we match \code{other}
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+match dice_roll {
+	3 => add_fancy_hat(),
+	7 => remove_fancy_hat(),
+	1 other => move_player(other),
+}
+\end{minted}
 % ---------------------------- 
 \printindex
 \end{document}
