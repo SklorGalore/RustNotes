@@ -438,6 +438,15 @@ enum IpAddr {
 let home = IpAddr::V4(127, 0, 0, 1);
 let loopback = IpAddr::V6(String::from("::1"));
 \end{minted}
+Enum values can also be named
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+enum Message {
+	Quit,
+	Move { x: i32, y: i32 },
+	Write(String),
+	ChangeColor(i32, i32, i32),
+}
+\end{minted}
 % ---------------------------- 
 \printindex
 \end{document}
