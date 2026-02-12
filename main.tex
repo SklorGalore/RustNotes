@@ -383,7 +383,7 @@ Methods are functions declared using an \emph{implementation} of a struct.
 Declare a method within an \code{impl \emph{struct\_name}} block just as you would a regular function though the first parameter is always \code{\&self}.
 \subsubsection{Associated Functions}
 
-If a function is implemented within an \code{impl} block, it is known as an \epmh{associated function}\index{associated functions}, as it is \emph{associated} with a struct.
+If a function is implemented within an \code{impl} block, it is known as an \emph{associated function}\index{associated functions}, as it is \emph{associated} with a struct.
 If a function references the struct itself via \code{\&self} it is further known as a method.
 Functions do not have to be methods however, and can be declared as an implementation without this reference.
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
