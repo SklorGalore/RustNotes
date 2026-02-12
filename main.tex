@@ -428,7 +428,16 @@ enum IpAddr {
 let home = IpAddr::V4(String::from("127.0.0.1"));
 let loopback = IpAddr::V6(String::from("::1"));
 \end{minted}
-Note that defining this enum has also created a constructor function to define instances of an enum
+Note that defining this enum has also created a constructor function to define instances of an enum.
+We don't have to stop at one value though!
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+enum IpAddr {
+	V4(u8, u8, u8, u8),
+	V6(String),
+}
+let home = IpAddr::V4(127, 0, 0, 1);
+let loopback = IpAddr::V6(String::from("::1"));
+\end{minted}
 % ---------------------------- 
 \printindex
 \end{document}
