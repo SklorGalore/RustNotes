@@ -419,6 +419,15 @@ We could then make a function that only accepts types of ip address
 fn route(ip_kind: IpAddrKind) {}
 \end{minted}
 This function could be called on either variant of IP address.
+We can also create associated values in our enum definition
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+enum IpAddr {
+	V4(String),
+	V6(String),
+}
+let home = IpAddr::V4(String::from("127.0.0.1"));
+let loopback = IpAddr::V6(String::from("::1"));
+\end{minted}
 % ---------------------------- 
 \printindex
 \end{document}
