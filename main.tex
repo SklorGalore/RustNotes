@@ -399,6 +399,16 @@ impl Rectangle {
 \end{minted}
 These functions are called using the struct name and "::" syntax, like \code{String::from("string")}
 \section{Enums and Pattern Matching}
+
+Enums allow specification of a list of allowable values.
+Note that an \emph{enum} value can only be one of the possibilities.
+To enumerate the possible values for IP addresses we would
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+enum IpAddrKind {
+    V4,
+    V6,
+}
+\end{minted}
 % ---------------------------- 
 \printindex
 \end{document}
