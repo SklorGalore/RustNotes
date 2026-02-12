@@ -450,6 +450,14 @@ enum Message {
 \subsection{The Option Enum}
 
 The option enum is provided by the standard library and is utilized to represent that a value may or may not exist.
+For example, if you request the first value of a list, that value might not exist, but we still want an option to handle this scenario.
+Rust does not have nulls, but it does have \code{Option<T>} as defined by the standard library
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+enum Option<T> {
+	None,
+	Some(T),
+}
+\end{minted}
 % ---------------------------- 
 \printindex
 \end{document}
