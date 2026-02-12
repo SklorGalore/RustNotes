@@ -459,7 +459,14 @@ enum Option<T> {
 }
 \end{minted}
 These are so pervasive that they are included in Rust's prelude, that is that you don't even have to manually include them in scope.
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+let some_number = Some(5);
+let some_char = Some('e');
 
+let absent_number: Option<i32> = None;
+\end{minted}
+Above, the variables are of type \code{Option<i32>}}, \code{Option<char>}, and \code{Option<i32>} respectively.
+Option was able to infer the first two but cannot infer the type of none so it was annotated in the variable definition.
 % ---------------------------- 
 \printindex
 \end{document}
