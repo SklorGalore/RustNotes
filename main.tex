@@ -488,6 +488,21 @@ fn value_in_cents(coin: Coin) -> u8 {
 	}
 }
 \end{minted}
+Matches are useful for finding a matching component, binding a piece to something else, and executing based off of it.
+A further example of matching
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+fn value_in_cents(coin: Coin) -> u8 {
+	match coin {
+		Coin::Penny => 1,
+		Coin::Nickel => 5,
+		Coin::Dime => 10,
+		Coin::Quarter(state) => {
+			println!("State quarter from {state:?}!");
+			25
+		}
+	}
+}
+\end{minted}
 % ---------------------------- 
 \printindex
 \end{document}
