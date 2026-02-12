@@ -520,7 +520,13 @@ If you don't want to use this value, we use \code{\_}, an underscore.
 This pattern will match anything but does not bind to it.
 \subsection{If Let}
 
-
+In the case that we want to have a single branch match, we can use an \code{if let}.
+\begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
+	let config_max = Some(3u8);
+	if let Some(max) = config_max {
+		println!("The maximum is configured to be {max}");
+	}
+\end{minted}
 % ---------------------------- 
 \printindex
 \end{document}
