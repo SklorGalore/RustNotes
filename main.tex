@@ -527,6 +527,12 @@ In the case that we want to have a single branch match, we can use an \code{if l
 		println!("The maximum is configured to be {max}");
 	}
 \end{minted}
+In the above code, we are matching \code{config\_max} to \code{Some(max)}.
+As some value exists, the value will match the max pattern and the following block will execute.
+Additionally, we can add an \code{else} to match the scenarios we would use an underscore pattern for.
+\subsection{Let...else}
+
+
 % ---------------------------- 
 \printindex
 \end{document}
