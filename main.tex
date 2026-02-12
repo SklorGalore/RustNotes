@@ -508,7 +508,7 @@ This becomes incredibly useful with \code{Option<T>} as we can match whether the
 For example, the following checks if the input has a type of \code{Some(\#)} or if it is \code{None} and execute code and return a value based on this.
 One important thing to note on matches is that they must be exhaustive.
 If we reach the end of a match and nothing has matched, we have a problem.
-If we want to catch the value at the end and use it, we match \code{other}
+If we want to catch the value at the end and use it, we match a variable we define.
 \begin{minted}[linenos, style=gruvbox-dark, bgcolor=darkgray]{rust}
 match dice_roll {
 	3 => add_fancy_hat(),
@@ -516,6 +516,9 @@ match dice_roll {
 	1 other => move_player(other),
 }
 \end{minted}
+If you don't want to use this value, we use \code{\_}, an underscore.
+This pattern will match anything but does not bind to it.
+\subsection{If Let}
 % ---------------------------- 
 \printindex
 \end{document}
