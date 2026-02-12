@@ -506,6 +506,8 @@ fn value_in_cents(coin: Coin) -> u8 {
 If we passed \code{Coin::Quarter(UsState::Alaska)}, it would match as a quarter and state would take the value \code{UsState::Alaska}.
 This becomes incredibly useful with \code{Option<T>} as we can match whether the value is something or none.
 For example, the following checks if the input has a type of \code{Some(\#)} or if it is \code{None} and execute code and return a value based on this.
+One important thing to note on matches is that they must be exhaustive.
+If we reach the end of a match and nothing has matched, we have a problem.
 % ---------------------------- 
 \printindex
 \end{document}
