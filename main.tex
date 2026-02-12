@@ -467,6 +467,11 @@ let absent_number: Option<i32> = None;
 \end{minted}
 Above, the variables are of type \code{Option<i32>}}, \code{Option<char>}, and \code{Option<i32>} respectively.
 Option was able to infer the first two but cannot infer the type of none so it was annotated in the variable definition.
+Note that \code{i32} and \code{Option<i32>} are not the same type, and cannot be treated equivalently.
+We want to use option in the circumstances that the value it refers to could potentially not exist, thus forcing us to handle that scenario.
+\subsection{Match Control Flow}
+
+
 % ---------------------------- 
 \printindex
 \end{document}
